@@ -1,0 +1,19 @@
+// custom variables
+$primary: #f0c464;
+
+
+@import '/Users/BROB/Desktop/Websites/beatsbytay/BeatsByTay/node_modules/bootstrap/scss/_functions.scss';
+
+@import '/Users/BROB/Desktop/Websites/beatsbytay/BeatsByTay/node_modules/bootstrap/scss/_variables.scss';
+
+// custom theme map
+$custom-theme-colors: (
+  "blk": black,
+  "jet": #131312,
+);
+
+// map merge
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import '/Users/BROB/Desktop/Websites/beatsbytay/BeatsByTay/node_modules/bootstrap/scss/bootstrap.scss';
