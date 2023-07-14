@@ -58,7 +58,89 @@
   </head>
   <body>
     <!-- NAV -->
+
+    <!-- Button to toggle the offcanvas menu -->
     <nav class="navbar navbar-dark bg-blk fixed-top">
+      <div class="container-fluid text-light d-flex justify-content-between">
+        <button
+        class="custom-navbar-toggler fs-5"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar"
+        aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Offcanvas menu -->
+        <div
+        class="offcanvas offcanvas-end bg-blk w-100"
+        tabindex="-1"
+        id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">
+            Beats By Tay
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#services"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu bg-blk">
+                <li>
+                  <a class="dropdown-item text-white bg-blk" href="#night-life">Night Life</a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-white bg-blk" href="#weddings">Weddings</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-white bg-blk" href="#private-events">Private Events</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <span class="social-icons">
+              <a href="tel"><i class="bi bi-telephone-fill fs-6 fs-md-5 me-2 text-primary"></i></a>
+              <a href="#"><i class="bi bi-envelope-fill fs-6 fs-md-5 me-2 text-primary"></i></a>
+              <a href="#"><i class="bi bi-facebook fs-6 fs-md-5 me-2 text-primary"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-6 fs-md-5 me-2 text-primary"></i></a>
+              <a href="#"><i class="bi bi-linkedin fs-6 fs-md-4 me-2 text-primary"></i></a>
+            </span>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- OG NAV -->
+    <!-- <nav class="navbar navbar-dark bg-blk fixed-top">
       <div class="container-fluid text-light d-flex justify-content-between">
         <button
           class="custom-navbar-toggler fs-5"
@@ -70,7 +152,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Offcanvas Menu -->
         <div
           class="offcanvas offcanvas-end bg-blk w-100"
           tabindex="-1"
@@ -160,12 +241,12 @@
             </ul>
           </div>
         </div>
-        <!-- Book Event Button -->
         <a href="#contact" class="btn btn-sm btn-outline-primary" type="button">
           Book Event
         </a>
       </div>
-    </nav>
+    </nav> -->
+
     <main class="bg-blk">
       <!----- HOME ----->
       <section id="home" class="bg-blk my-5">
